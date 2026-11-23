@@ -24,7 +24,7 @@
     .barras .b { flex: 1; min-width: 0; height: 100%; display: flex; align-items: flex-end; cursor: default; }
     .barras .b i { display: block; flex: 1 1 auto; background: var(--marca); border-radius: 4px 4px 0 0; min-height: 0; }
     .barras .b:hover i, .barras .b:focus i { background: #6d2a46; }
-    .barras .b.vazio i { background: transparent; }
+    .barras .b.sem i { background: transparent; }
     .eixo { display: flex; justify-content: space-between; font-size: 12px; color: var(--suave); margin-top: 6px; }
     #dica { position: fixed; pointer-events: none; background: var(--tinta); color: #fff; font-size: 13px; font-weight: 700; padding: 6px 10px; border-radius: 8px; opacity: 0; transition: opacity .1s; z-index: 20; white-space: nowrap; }
     table { width: 100%; border-collapse: collapse; font-size: 15px; }
@@ -110,7 +110,7 @@
         </div>
         <div class="secao"><h2>Gasto por dia</h2></div>
         <div class="cartao">
-          <div class="barras" id="barras">${serie.map((s) => `<div class="b ${s.x.usd ? '' : 'vazio'}" tabindex="0" data-dica="Dia ${s.dia}: ${brl(s.x.usd || 0)} · ${s.x.voz || 0} falas, ${s.x.caderno || 0} páginas"><i style="height:${((s.x.usd || 0) / max) * 100}%"></i></div>`).join('')}</div>
+          <div class="barras" id="barras">${serie.map((s) => `<div class="b ${s.x.usd ? '' : 'sem'}" tabindex="0" data-dica="Dia ${s.dia}: ${brl(s.x.usd || 0)} · ${s.x.voz || 0} falas, ${s.x.caderno || 0} páginas"><i style="height:${((s.x.usd || 0) / max) * 100}%"></i></div>`).join('')}</div>
           <div class="eixo"><span>dia 1</span><span>maior dia: ${brl(max === 0.0001 ? 0 : max)}</span><span>dia ${ultimo}</span></div>
         </div>
         <div class="secao"><h2>Por mês</h2></div>
