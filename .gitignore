@@ -1,0 +1,7 @@
+.DS_Store
+.claude/
+.segredos
+firestore.gerado.rules
+.firebase/
+.wrangler/
+node_modules/

@@ -1,0 +1,12 @@
+name = "minhas-bolsas"
+main = "worker.js"
+compatibility_date = "2026-11-01"
+
+[vars]
+SITE_URL = "https://carlsoncarvjr.github.io"
+LIMITE_MES_USD = "10"
+
+# preenchido pelo `wrangler kv namespace create USO` (ver LEIA-ME)
+[[kv_namespaces]]
+binding = "USO"
+id = "__KV_ID__"
