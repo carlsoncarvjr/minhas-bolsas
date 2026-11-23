@@ -9,4 +9,4 @@ LIMITE_MES_USD = "10"
 # preenchido pelo `wrangler kv namespace create USO` (ver LEIA-ME)
 [[kv_namespaces]]
 binding = "USO"
-id = "__KV_ID__"
+id = "30aeea7e696d49ac9ecce6b60dfebed4"

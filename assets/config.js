@@ -22,4 +22,4 @@ export const FB_HOSTS = ['carlsoncarvjr.github.io', 'localhost'];
 
 // Endereço do servidor da IA (Cloudflare Worker, pasta servidor/): lê o caderno e entende a fala.
 // Vazio = em demonstração a leitura é simulada, sem IA.
-export const SERVIDOR_URL = '';
+export const SERVIDOR_URL = 'https://minhas-bolsas.carlsoncarvjr.workers.dev';
