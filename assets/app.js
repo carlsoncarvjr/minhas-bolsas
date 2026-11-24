@@ -122,7 +122,7 @@ function render() {
   const titulo = { inicio: NOME, bolsas: 'Bolsas', clientes: 'Clientes', mais: 'Números e histórico' }[a];
   $('#app').innerHTML = `
     <header class="topo">
-      <h1>${esc(titulo)}</h1>
+      <h1>${a === 'inicio' ? `<img class="logo" src="assets/marca/luana-closet-horizontal-cafe.svg" alt="${esc(NOME)}">` : esc(titulo)}</h1>
       ${a === 'mais' ? `<button class="fechar" data-acao="ajustes" aria-label="Ajustes">${I.ajustes}</button>` : ''}
     </header>
     <main class="pagina">${modo === 'demo' ? '<div class="aviso-demo">Modo demonstração: os dados são de exemplo e ficam só neste navegador.</div>' : ''}${telas[a]()}</main>

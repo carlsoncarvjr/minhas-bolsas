@@ -5,7 +5,7 @@
 //
 // Não tem login: o acesso é pelo link com o código (?c=...). Ver README.
 
-export const NOME = 'Minhas Bolsas';
+export const NOME = 'Luana Closet';
 
 // Projeto "Minhas Bolsas" (minhas-bolsas-01beo) na conta Google do Carlson.
 export const FB_CFG = {
